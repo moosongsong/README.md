@@ -113,3 +113,18 @@ try:
     raise OopsException('panic')
 except OopsException as exc:
     print(exc)
+
+
+#######################################################
+
+class Quite():
+    def __init__(self, person, words):
+        self.person = person
+        self.words = words
+
+    def who(self):
+        return self.person
+
+    def says(self):
+        return self.words
+
